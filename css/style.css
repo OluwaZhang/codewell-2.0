@@ -120,7 +120,7 @@ form button[type="submit"] {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url("/img/Checkmark.svg");
+  background-image: url("./img/Checkmark.svg");
   position: absolute;
   background-size: cover;
   left: -2em;
