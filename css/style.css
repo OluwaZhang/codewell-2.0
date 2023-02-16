@@ -55,7 +55,7 @@ header .container {
   width: 90%;
 }
 .art-showcase img {
-  position: absolute;
+  position: absolute; /* this covers all the images */
   width: 200px;
   height: auto;
   padding: 50px 0 0 60px;
@@ -66,12 +66,24 @@ header .container {
 /* using poaition absolute and relative to overlay the images */
 .art-showcase .art3 {
   transform: rotateZ(-15deg);
+  /* position: absolute; */ /* this part was unnecessary */
+  left: -6px;
+  top: 10px;
 }
 .art-showcase .art2 {
   transform: rotateZ(-30deg);
+  /* position: absolute; */
+  left: -12px;
+  top: 20px;
 }
 .art-showcase .art1 {
   transform: rotateZ(-45deg);
+  /* position: absolute; */
+  left: -18px;
+  top: 30px;
+}
+.art-showcase .art4 {
+  /* position: absolute; */
 }
 /* this shit above took me 30 mins to get.... damn it!!!! */
 
@@ -154,3 +166,5 @@ footer ul {
 .avatar p strong {
   display: block;
 }
+
+/* tablet view */
