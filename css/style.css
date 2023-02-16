@@ -1,0 +1,152 @@
+/* resets */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* general settings */
+body {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
+  margin: auto;
+  font-size: 12px;
+  background-color: rgb(244, 233, 216);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+li {
+  list-style: none;
+}
+/* header */
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-bar {
+  display: none;
+}
+.logo {
+  display: flex;
+  gap: 7px;
+}
+
+.logo figcaption {
+  margin-top: 5px;
+  border: 0.7px solid black;
+  border-radius: 5em;
+  padding: 3px;
+  font-size: 9px;
+  font-weight: bold;
+  color: white;
+  background-image: linear-gradient(to right, #ffa500, #ff1010);
+}
+
+/* main */
+/* hero section */
+.art-showcase {
+  position: relative;
+  height: 350px;
+  width: 90%;
+}
+.art-showcase img {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  padding: 60px;
+  /*   display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+/* using poaition absolute and relative to overlay the images */
+.art-showcase .art3 {
+  transform: rotateZ(-15deg);
+}
+.art-showcase .art2 {
+  transform: rotateZ(-30deg);
+}
+.art-showcase .art1 {
+  transform: rotateZ(-45deg);
+}
+/* this shit above took me 30 mins to get.... damn it!!!! */
+
+/* styling readable */
+.readable {
+  width: 90%;
+}
+.readable h1 {
+  font-size: 42px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+  text-align: left;
+}
+
+.with-hosterr {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #484848;
+  line-height: 23px;
+}
+
+/* form */
+form {
+  display: grid;
+  gap: 7px;
+}
+form input[type="email"],
+form button[type="submit"] {
+  height: 38px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+form button[type="submit"] {
+  background-color: rgba(63, 63, 237, 0.79);
+  color: whitesmoke;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.side-note {
+  font-size: 13px;
+  color: #484848;
+  position: relative;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+.side-note:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url("/img/Checkmark.svg");
+  position: absolute;
+  background-size: cover;
+  left: -2em;
+  margin-top: -0.5px;
+}
+
+/* footer */
+footer ul {
+  font-size: 14px;
+  display: flex;
+  gap: 27px;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+}
+
+.avatar {
+  display: flex;
+  gap: 18px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Playfair Display", serif;
+}
+
+.avatar p {
+  margin-top: 7.2px;
+}
+.avatar p strong {
+  display: block;
+}
