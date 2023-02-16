@@ -14,8 +14,9 @@ body {
 
 .container {
   width: 90%;
-  margin: auto;
+  /* margin: auto; */
 }
+
 li {
   list-style: none;
 }
@@ -45,6 +46,9 @@ header .container {
 
 /* main */
 /* hero section */
+.hero {
+  width: 100%;
+}
 .art-showcase {
   position: relative;
   height: 350px;
@@ -52,12 +56,12 @@ header .container {
 }
 .art-showcase img {
   position: absolute;
-  width: 70%;
+  width: 200px;
   height: auto;
-  padding: 60px;
+  padding: 50px 0 0 60px;
   /*   display: flex;
   justify-content: center;
-  align-items: center;*/
+  align-items: center; */
 }
 /* using poaition absolute and relative to overlay the images */
 .art-showcase .art3 {
@@ -120,7 +124,7 @@ form button[type="submit"] {
   content: " ";
   width: 18px;
   height: 18px;
-  background-image: url(".../img/Checkmark.svg");
+  background-image: url("./../img/Checkmark.svg");
   position: absolute;
   background-size: cover;
   left: -2em;
