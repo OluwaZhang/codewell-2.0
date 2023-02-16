@@ -117,10 +117,10 @@ form button[type="submit"] {
   margin-bottom: 50px;
 }
 .side-note:before {
-  content: "";
+  content: " ";
   width: 18px;
   height: 18px;
-  background-image: url("./img/Checkmark.svg");
+  background-image: url("../img/Checkmark.svg");
   position: absolute;
   background-size: cover;
   left: -2em;
@@ -145,7 +145,7 @@ footer ul {
 }
 
 .avatar p {
-  margin-top: 7.2px;
+  margin-top: 7px;
 }
 .avatar p strong {
   display: block;
