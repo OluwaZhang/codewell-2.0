@@ -20,6 +20,9 @@ body {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 /* header */
 header .container {
   width: 100%;
@@ -119,13 +122,15 @@ form {
   gap: 7px;
 }
 form input[type="email"],
-form button[type="submit"] {
+form button[type="submit"],
+button[type="submit"] {
   height: 38px;
   border: none;
   padding-left: 10px;
   border-radius: 5px;
 }
-form button[type="submit"] {
+form button[type="submit"],
+button[type="submit"] {
   background-color: rgba(63, 63, 237, 0.79);
   color: whitesmoke;
   font-weight: bold;
@@ -192,9 +197,6 @@ footer ul {
     font-size: 11px;
   }
 
-  /*   .art-showcase {
-    width: 53%;
-  } */
   .art-showcase img {
     width: 300px;
     margin-left: 57px;
@@ -216,7 +218,8 @@ footer ul {
     height: 50px;
     font-size: 18px;
   }
-  form button[type="submit"] {
+  form button[type="submit"],
+  button[type="submit"] {
     width: 120px;
     height: 50px;
   }
@@ -236,6 +239,42 @@ footer ul {
   }
 
   .avatar {
-    padding-right: 20px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1107px) {
+  body {
+    width: 88%;
+    margin: auto;
+  }
+  .nav-bar {
+    display: flex;
+    gap: 150px;
+    font-size: 20px;
+  }
+  .left-list,
+  .right-list {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+  .right-list {
+    gap: 30px;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    margin-right: 40px;
+  }
+  .logo img {
+    width: 102px;
+  }
+
+  .logo figcaption {
+    margin-top: 20px;
   }
 }
