@@ -242,7 +242,7 @@ footer ul {
     margin-right: 50px;
   }
 }
-
+/* desktop view */
 @media screen and (min-width: 1107px) {
   body {
     width: 88%;
