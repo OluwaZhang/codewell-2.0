@@ -277,4 +277,8 @@ footer ul {
   .logo figcaption {
     margin-top: 20px;
   }
+  .hero {
+    display: flex;
+    justify-content: space-between;/*  *this is not reponding for some reason/
+  }
 }
