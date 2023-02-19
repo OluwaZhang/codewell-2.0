@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   /* margin: auto; */
 }
 
@@ -22,6 +22,7 @@ li {
 }
 /* header */
 header .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -34,25 +35,31 @@ header .container {
 }
 
 .logo figcaption {
-  margin-top: 5px;
+  width: 80px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
   border: 0.7px solid black;
   border-radius: 5em;
-  padding: 3px;
+  /* padding: 3px; */ /* just discovered this was unnecessary */
   font-size: 9px;
   font-weight: bold;
   color: white;
-  background-image: linear-gradient(to right, #ffa500, #ff1010);
+  background-image: linear-gradient(to right, #ffaf1b, #ff1010);
 }
 
 /* main */
 /* hero section */
-.hero {
+.hero .container {
   width: 100%;
 }
 .art-showcase {
   position: relative;
   height: 350px;
-  width: 90%;
+  /* width: 90%; */
+  /* margin: auto; */
 }
 .art-showcase img {
   position: absolute; /* this covers all the images */
@@ -89,7 +96,7 @@ header .container {
 
 /* styling readable */
 .readable {
-  width: 90%;
+  width: 100%;
 }
 .readable h1 {
   font-size: 42px;
@@ -167,4 +174,68 @@ footer ul {
   display: block;
 }
 
-/* tablet view */
+/* tablet view using media query*/
+
+@media screen and (min-width: 460px) {
+  .art-showcase img {
+    width: 250px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 580px) {
+  body {
+    padding: 28px;
+  }
+  .logo figcaption {
+    width: 100px;
+    font-size: 11px;
+  }
+
+  /*   .art-showcase {
+    width: 53%;
+  } */
+  .art-showcase img {
+    width: 300px;
+    margin-left: 57px;
+    margin-top: -30px;
+  }
+  .readable {
+    margin-top: 10px;
+  }
+  .with-hosterr {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  form {
+    display: flex;
+  }
+  form input[type="email"] {
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+  }
+  form button[type="submit"] {
+    width: 120px;
+    height: 50px;
+  }
+  .side-note {
+    font-size: 16px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .foot-list {
+    margin-top: 15px;
+  }
+
+  .avatar {
+    padding-right: 20px;
+  }
+}
