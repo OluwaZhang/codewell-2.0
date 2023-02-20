@@ -55,9 +55,9 @@ header .container {
 
 /* main */
 /* hero section */
-.hero .container {
+/* .hero {
   width: 100%;
-}
+} */
 .art-showcase {
   position: relative;
   height: 350px;
@@ -273,8 +273,33 @@ footer ul {
     margin-top: 20px;
   }
 
-  .hero {
+  #hero-sec {
     display: flex;
-    justify-content: space-between; /*  *this is not reponding for some reason */
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 4.3em;
+    margin-bottom: 4em;
+  } /*this is not reponding for some reason */
+
+  .readable {
+    max-width: 47%;
+  }
+
+  /* .art-showcase {
+    max-width: 30%;
+  } */ /* unnecessary */
+
+  .avatar img {
+    width: 40px;
+  }
+
+  .avatar p {
+    font-size: 15px;
+    margin-top: 14px;
+  }
+
+  .avatar {
+    padding-right: 6em;
   }
 }
