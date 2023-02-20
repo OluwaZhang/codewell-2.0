@@ -279,6 +279,6 @@ footer ul {
   }
   .hero {
     display: flex;
-    justify-content: space-between;/*  *this is not reponding for some reason/
+    justify-content: space-between; /*  *this is not reponding for some reason */
   }
 }
