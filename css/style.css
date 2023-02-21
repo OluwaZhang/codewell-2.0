@@ -275,6 +275,7 @@ footer ul {
 
   #hero-sec {
     display: flex;
+    gap: 163px;
     justify-content: flex-end;
     align-items: center;
     flex-direction: row-reverse;
@@ -284,6 +285,7 @@ footer ul {
 
   .readable {
     max-width: 47%;
+    margin-top: 4em;
   }
 
   /* .art-showcase {
@@ -297,9 +299,5 @@ footer ul {
   .avatar p {
     font-size: 15px;
     margin-top: 14px;
-  }
-
-  .avatar {
-    padding-right: 6em;
   }
 }
